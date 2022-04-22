@@ -5,10 +5,10 @@ const NavBar = (props) => {
     <>
         <nav>
           <ul className="sidenav">
-            <li><Link to="/"><span>Home</span></Link></li>
-            <li><Link to="/Projects"><span>Projects</span></Link></li>
-            <li><Link to="/About"><span>About</span></Link></li>
-            <li><Link to="/Contact"><span>Contact</span></Link></li>
+            <li><a href="#header"><span>Home</span></a></li>
+            <li><a href="#top-projects"><span>Projects</span></a></li>
+            <li><a href="#about"><span>About</span></a></li>
+            <li><a href="#contact"><span>Contact</span></a></li>
           </ul>
         </nav>
     </>

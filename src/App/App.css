@@ -46,6 +46,7 @@ div.content {
 
 .landing h1 {
   margin: 5%;
+  font-size: 3rem;
 }
 
 .landing span {
@@ -65,6 +66,11 @@ transition: .3s;
 
 .links img:hover {
   width :54px
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
 }
 
 .skill-options {
@@ -88,6 +94,17 @@ transition: .3s;
   margin: 10px 0;
 }
 
+.skill-section ul {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.skill-section li {
+  list-style-type: none;
+  width: fit-content;
+  margin: 0 auto;
+}
+
 .top-projects {
   display: flex;
   flex-direction: column;
@@ -97,6 +114,18 @@ transition: .3s;
 .project {
   padding: 0;
   padding-bottom: 30px;
+  width: 50vw;
+  margin: 30px auto;
+  transition: width .3s;
+}
+
+.project p {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.project:hover {
+  width: 60vw
 }
 
 .project img {
@@ -131,6 +160,10 @@ transition: .3s;
   ul.sidenav li a {
     float: left;
     padding: 15px 4%;
+  }
+
+  .project {
+    width: 80vw;
   }
 }
 

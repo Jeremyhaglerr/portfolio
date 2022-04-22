@@ -5,7 +5,7 @@ ul.sidenav {
   margin: 0;
   padding: 0;
   
-  background-color: #cac8c8;
+  background-color: #ffffff;
   position: fixed;
   height: 100%;
   overflow: auto;
@@ -29,9 +29,63 @@ ul.sidenav span {
 }
 
 
-/* ------------Body------------ */
+/* ------------General Rules------------ */
+
+div.content {
+  padding: .1px 0;
+  width: 80vw;
+  margin: 0 auto;
+}
 
 
+/* ------------Landing--------------- */
+
+.landing {
+  text-align: center;
+}
+
+.landing h1 {
+  margin: 5%;
+}
+
+.landing span {
+  color: white;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  height: 45px
+}
+
+.links img {
+width: 42px;
+transition: .3s;
+}
+
+.links img:hover {
+  width :54px
+}
+
+.skill-options {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.skill-options h2 {
+  width: fit-content;
+  padding: 8px;
+}
+
+.top-projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.project img {
+  width: 85vw;
+}
 
 /* -------------Media Queries------------- */
 

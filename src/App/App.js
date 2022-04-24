@@ -7,14 +7,14 @@ import Landing from '../Pages/Landing/Landing';
 function App() {
   return (
     <>
-      <Navbar/>
+      <Navbar />
       <div className='content'>
-      <Routes>
-        <Route
-          path='/'
-          element={<Landing />}
-        />
-      </Routes>
+        <Routes>
+          <Route
+            path='/'
+            element={<Landing />}
+          />
+        </Routes>
       </div>
     </>
   )

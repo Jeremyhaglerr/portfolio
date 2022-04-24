@@ -4,7 +4,6 @@ ul.sidenav {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  
   background-color: #ffffff;
   position: fixed;
   height: 100%;
@@ -28,6 +27,9 @@ ul.sidenav span {
   font-size: 1rem;
 }
 
+ul.sidenav img {
+  width:88px;
+}
 
 /* ------------General Rules------------ */
 
@@ -37,41 +39,31 @@ div.content {
   margin: 0 auto;
 }
 
-
-/* ------------Landing--------------- */
-
 .landing {
   text-align: center;
 }
 
-.landing h1 {
+section {
+  margin: 70px 0
+}
+
+h2 {
+  text-decoration: underline;
+  margin: 30px
+}
+
+/* ----------Header-------------- */
+
+#header h1 {
   margin: 5%;
   font-size: 3rem;
 }
 
-.landing span {
+#header span {
   color: white;
 }
 
-.links {
-  display: flex;
-  justify-content: space-around;
-  height: 45px
-}
-
-.links img {
-width: 42px;
-transition: .3s;
-}
-
-.links img:hover {
-  width :54px
-}
-
-.links a {
-  text-decoration: none;
-  color: black;
-}
+/* ---------------Skills---------------- */
 
 .skill-options {
   display: flex;
@@ -86,7 +78,8 @@ transition: .3s;
   text-decoration: underline;
 }
 
-.skill-section, .project {
+.skill-section,
+.project {
   background-color: white;
   padding: 10px 30px;
   border-radius: 15px;
@@ -105,6 +98,8 @@ transition: .3s;
   margin: 0 auto;
 }
 
+/* -----------Projects----------- */
+
 .top-projects {
   display: flex;
   flex-direction: column;
@@ -119,13 +114,14 @@ transition: .3s;
   transition: width .3s;
 }
 
-.project p {
-  width: 80%;
-  margin: 0 auto;
-}
-
 .project:hover {
   width: 60vw
+}
+
+.project p {
+  width: 80%;
+  margin: 10px auto;
+  font-size: 1.3rem;
 }
 
 .project img {
@@ -148,16 +144,56 @@ transition: .3s;
   text-decoration: underline;
 }
 
+/* ------------About----------- */
+
+#about strong {
+  font-size: 1.6rem;
+}
+
+/* -----------------Contact-------------- */
+
+.contact {
+  margin-bottom: 5%;
+}
+
+.links ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: fit-content;
+  list-style-type: none;
+}
+
+.links img {
+  width: 42px;
+  transition: .3s;
+}
+
+.links img:hover {
+  width: 54px
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+}
+
+.links p {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 /* -------------Media Queries------------- */
 
 @media screen and (max-width: 900px) {
   ul.sidenav {
-    width: 100%;
+    width: 120%;
     height: auto;
     position: relative;
+
   }
-  
-  ul.sidenav li a {
+
+  ul.sidenav li {
     float: left;
     padding: 15px 4%;
   }
@@ -165,11 +201,26 @@ transition: .3s;
   .project {
     width: 80vw;
   }
+
+  .project:hover{
+    width: 80vw;
+  }
 }
 
-@media screen and (max-width: 430px) {
+
+
+@media screen and (max-width: 550px) {
   ul.sidenav li a {
     float: left;
     padding: 5px 4%;
+  }
+
+  .links ul {
+    flex-direction: column;
+  }
+
+  .skill-options {
+    flex-direction: column;
+    justify-content: space-around;
   }
 }
